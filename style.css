@@ -1,0 +1,113 @@
+/* Background default */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #65c7f7, #0052d4);
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-container button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #6adfd1;
+    color: white;
+    cursor: pointer;
+}
+
+.error-message {
+    margin-top: 10px;
+    color: #ffdede;
+}
+
+/* Weather Card */
+.weather-card {
+    width: 350px;
+    margin: 25px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.weather-card img {
+    width: 110px;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+/* 5-day forecast display */
+.forecast-section {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.forecast-card {
+    width: 120px;
+    padding: 15px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.forecast-card img {
+    width: 50px;
+}
+
+/* Dynamic Backgrounds */
+body.clear {
+    background: linear-gradient(120deg, #56CCF2, #2F80ED);
+}
+body.clouds {
+    background: linear-gradient(120deg, #757F9A, #D7DDE8);
+}
+body.rain {
+    background: linear-gradient(120deg, #4b79a1, #283e51);
+}
+body.thunderstorm {
+    background: linear-gradient(120deg, #141E30, #243B55);
+}
+body.haze {
+    background: linear-gradient(120deg, #3E5151, #DECBA4);
+}
+body.snow {
+    background: linear-gradient(120deg, #E0EAFC, #CFDEF3);
+}
+
+#clear-btn {
+    background-color: rgb(214, 214, 62);
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+

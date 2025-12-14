@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- Bootstrap 4.5 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- 🔍 Search Section -->
+    <div class="search-container">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="search-btn">Search</button>
+        <button id="clear-btn" class="btn-clear">Clear</button>
+    </div>
+
+    <!-- ❗ Error Message -->
+    <div id="error-message" class="error-message"></div>
+
+    <!-- 🌦 Weather Card -->
+    <div id="weather-card" class="weather-card d-none">
+        <h2 id="city-name"></h2>
+        <img id="weather-icon" />
+        <div id="temperature" class="temp"></div>
+        <div id="description" class="description"></div>
+
+        <div class="details">
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+            <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s</p>
+        </div>
+    </div>
+
+    <!-- 📅 5-Day Forecast -->
+    <div id="forecast" class="forecast-section"></div>
+
+    <!-- 🔄 Bootstrap 4.5 Loader -->
+    <div id="spinner" class="d-none mt-4">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border text-light" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
